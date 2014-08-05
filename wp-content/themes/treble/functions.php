@@ -2,6 +2,10 @@
 
 add_theme_support( 'post-thumbnails' ); 
 set_post_thumbnail_size( 300, 300 );
+if ( function_exists( 'add_image_size' ) ) { 
+	add_image_size( 'front-page-size', 390, 300); //390 x 300 pixels (not cropped)
+	
+}
 
 function wpbootstrap_scripts_with_jquery()
 {
@@ -107,4 +111,3 @@ if ( function_exists('register_sidebar') )
 }
 
 ?>
-

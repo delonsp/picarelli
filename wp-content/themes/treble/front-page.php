@@ -177,102 +177,7 @@
                             </div>
                         </a>
                     </li>
-                    <!-- <li class="span4 mix ultra_som_geral">
-                        <a href="#<?php bloginfo('template_url'); ?>/pages/exams/project_7.html" data-destination="portfolio-items" data-insert="before">
-                            <img src="http://placehold.it/390x300" alt="Treble">
-                            <div class="portfolio-overlay">
-                                <h4>Ultra-Som abdominal</h4>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="span4 mix ultra_som_geral">
-                        <a href="#<?php bloginfo('template_url'); ?>/pages/exams/project_8.html" data-destination="portfolio-items" data-insert="before">
-                            <img src="http://placehold.it/390x300" alt="Treble">
-                            <div class="portfolio-overlay">
-                                <h4>Ultra-Som pélvico</h4>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="span4 mix ultra_som_geral">
-                        <a href="#<?php bloginfo('template_url'); ?>/pages/exams/project_9.html" data-destination="portfolio-items" data-insert="before">
-                            <img src="http://placehold.it/390x300" alt="Treble">
-                            <div class="portfolio-overlay">
-                                <h4>Ultra-Som de rins</h4>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="span4 mix ultra_som_especializado">
-                        <a href="#<?php bloginfo('template_url'); ?>/pages/exams/project_9.html" data-destination="portfolio-items" data-insert="before">
-                            <img src="http://placehold.it/390x300" alt="Treble">
-                            <div class="portfolio-overlay">
-                                <h4>Ultra-Som de mamas</h4>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="span4 mix ultra_som_especializado">
-                        <a href="#<?php bloginfo('template_url'); ?>/pages/exams/project_9.html" data-destination="portfolio-items" data-insert="before">
-                            <img src="http://placehold.it/390x300" alt="Treble">
-                            <div class="portfolio-overlay">
-                                <h4>Ultra-Som de tireóide</h4>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="span4 mix ultra_som_especializado">
-                        <a href="#<?php bloginfo('template_url'); ?>/pages/exams/project_9.html" data-destination="portfolio-items" data-insert="before">
-                            <img src="http://placehold.it/390x300" alt="Treble">
-                            <div class="portfolio-overlay">
-                                <h4>Ultra-Som de partes moles</h4>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="span4 mix ultra_som_especializado">
-                        <a href="#<?php bloginfo('template_url'); ?>/pages/exams/project_9.html" data-destination="portfolio-items" data-insert="before">
-                            <img src="http://placehold.it/390x300" alt="Treble">
-                            <div class="portfolio-overlay">
-                                <h4>Ultra-Som transvaginal</h4>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="span4 mix ultra_som_especializado">
-                        <a href="#<?php bloginfo('template_url'); ?>/pages/exams/project_9.html" data-destination="portfolio-items" data-insert="before">
-                            <img src="http://placehold.it/390x300" alt="Treble">
-                            <div class="portfolio-overlay">
-                                <h4>Ultra-Som de partes moles</h4>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="span4 mix ultra_som_especializado">
-                        <a href="#<?php bloginfo('template_url'); ?>/pages/exams/project_9.html" data-destination="portfolio-items" data-insert="before">
-                            <img src="http://placehold.it/390x300" alt="Treble">
-                            <div class="portfolio-overlay">
-                                <h4>Ultra-Som vascular</h4>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="span4 mix ultra_som_especializado">
-                        <a href="#<?php bloginfo('template_url'); ?>/pages/exams/project_9.html" data-destination="portfolio-items" data-insert="before">
-                            <img src="http://placehold.it/390x300" alt="Treble">
-                            <div class="portfolio-overlay">
-                                <h4>Ultra-Som transcraniano</h4>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="span4 mix laboratorio">
-                        <a href="#<?php bloginfo('template_url'); ?>/pages/exams/project_9.html" data-destination="portfolio-items" data-insert="before">
-                            <img src="http://placehold.it/390x300" alt="Treble">
-                            <div class="portfolio-overlay">
-                                <h4>Laboratório geral</h4>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="span4 mix laboratorio">
-                        <a href="#<?php bloginfo('template_url'); ?>/pages/exams/project_9.html" data-destination="portfolio-items" data-insert="before">
-                            <img src="http://placehold.it/390x300" alt="Treble">
-                            <div class="portfolio-overlay">
-                                <h4>Laboratório Especializado</h4>
-                            </div>
-                        </a>
-                    </li> -->
+                    
                 </ul>
             </article>
             <!-- End Article -->
@@ -582,100 +487,34 @@
                 <!-- Blog articles -->
                 <ul class="thumbnails">
                     <?php if ( have_posts() ) : 
-                        $args = array( 'numberposts' => '6' );
-                        $recent_posts = wp_get_recent_posts( $args );
-                            foreach( $recent_posts as $recent ){ ?>
-                                <!-- Blog post -->
+                        $the_query = new WP_Query( 'showposts=5' );
+                        while ($the_query -> have_posts()) : $the_query -> the_post(); ?>
+                            <!-- Blog post -->
                                 <li class="span4">
                                 
                                     <!-- Blog image -->
                                     <a href="<?php bloginfo('template_url');?>/pages/blog/blog_1.html">
-                                        <img src="http://placehold.it/390x300" alt="Treble">
+                                        <?php the_post_thumbnail('front-page-size');?>
                                     </a>
                                     
                                     <!-- Blog title -->
                                     <h5>
-                                        Título da postagem<br/>
-                                        <small>10 de Julho de 2014</small>
+                                        <?php the_title(); ?><br/>
+                                        <small><?php the_time('j \d\e F \d\e Y'); ?></small>
                                     </h5>
                                     
                                     <!-- Blog post description -->
-                                    <p class="smallFontBy08">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua,consectetur adipisicing elit.</p>
+                                    <p class="smallFontBy08"><?php echo substr(strip_tags($post->post_content), 0, 250);?></p>
                                     
                                     <!-- Blog read more -->
                                     <div class="read-more">
                                         <a href="<?php bloginfo('template_url');?>/pages/blog/blog_1.html">Leia Mais...</a>
                                     </div>
                                 </li>
-                                <li class="span4">
-                                    <a href="<?php bloginfo('template_url');?>/pages/blog/blog_2.html">
-                                        <img src="http://placehold.it/390x300" alt="Treble">
-                                    </a>
-                                    <h5>
-                                        Título da postagem<br/>
-                                        <small>10 de Julho de 2014</small>
-                                    </h5>
-                                    <p class="smallFontBy08">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua,consectetur adipisicing elit.</p>
-                                    <div class="read-more">
-                                        <a href="<?php bloginfo('template_url');?>/pages/blog/blog_2.html">Leia Mais...</a>
-                                    </div>
-                                </li>
-                                <li class="span4">
-                                    <a href="<?php bloginfo('template_url');?>/pages/blog/blog_3.html">
-                                        <img src="http://placehold.it/390x300" alt="Treble">
-                                    </a>
-                                    <h5>
-                                        Título da postagem<br/>
-                                        <small>10 de Julho de 2014</small>
-                                    </h5>
-                                    <p class="smallFontBy08">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua,consectetur adipisicing elit.</p>
-                                    <div class="read-more">
-                                        <a href="<?php bloginfo('template_url');?>/pages/blog/blog_3.html">Leia Mais...</a>
-                                    </div>
-                                </li>
-                                <li class="span4">
-                                    <a href="<?php bloginfo('template_url');?>/pages/blog/blog_4.html">
-                                        <img src="http://placehold.it/390x300" alt="Treble">
-                                    </a>
-                                    <h5>
-                                        Título da postagem<br/>
-                                        <small>10 de Julho de 2014</small>
-                                    </h5>
-                                    <p class="smallFontBy08">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua,consectetur adipisicing elit.</p>
-                                    <div class="read-more">
-                                        <a href="<?php bloginfo('template_url');?>/pages/blog/blog_4.html">Leia Mais...</a>
-                                    </div>
-                                </li>
-                                <li class="span4">
-                                    <a href="<?php bloginfo('template_url');?>/pages/blog/blog_5.html">
-                                        <img src="http://placehold.it/390x300" alt="Treble">
-                                    </a>
-                                    <h5>
-                                        Título da postagem<br/>
-                                        <small>10 de Julho de 2014</small>
-                                    </h5>
-                                    <p class="smallFontBy08">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua,consectetur adipisicing elit.</p>
-                                    <div class="read-more">
-                                        <a href="<?php bloginfo('template_url');?>/pages/blog/blog_5.html">Leia Mais...</a>
-                                    </div>
-                                </li>
-                                <li class="span4">
-                                    <a href="<?php bloginfo('template_url');?>/pages/blog/blog_6.html">
-                                        <img src="http://placehold.it/390x300" alt="Treble">
-                                    </a>
-                                    <h5>
-                                        Título da postagem<br/>
-                                        <small>10 de Julho de 2014</small>
-                                    </h5>
-                                    <p class="smallFontBy08">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua,consectetur adipisicing elit.</p>
-                                    <div class="read-more">
-                                        <a href="<?php bloginfo('template_url');?>/pages/blog/blog_6.html">Leia Mais...</a>
-                                    </div>
-                                </li>
-                            <?php } // end of foreach loop ?>
-                        <?php else: ?>
-                                <li class="span4"><?php _e('Desculpe, não há posts.'); ?></li>
-                        <?php endif; ?>
+                        <?php endwhile;?>
+                    <?php else: ?>
+                            <li class="span4"><?php _e('Desculpe, não há posts.'); ?></li>
+                    <?php endif; ?>
                             
                 </ul>
             </article>
