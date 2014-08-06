@@ -73,18 +73,7 @@
                 -->
                 <nav class="submenu">
                     <ul>
-                        <!-- <li>
-                            <a href="#" class="plugin-filter" data-filter="ultra_som_geral">Ultra-Som Geral</a>
-                        </li> -->
-                        <!-- <li>
-                            <a href="#" class="plugin-filter" data-filter="laboratorio">Laboratório</a>
-                        </li> -->
-                        <!-- <li>
-                            <a href="#" class="plugin-filter" data-filter="ultra_som_especializado">Ultra-Som Especializado</a>
-                        </li> -->
-                        <!-- <li>
-                            <a href="#" class="plugin-filter" data-filter="all">Todos</a>
-                        </li> -->
+                        
                         <li>
                             <a href="#<?php bloginfo('template_url'); ?>/pages/exams/cardiologia.html"
                              class="submenu-item active" data-destination="plugin-filter-elements" data-insert="html" >

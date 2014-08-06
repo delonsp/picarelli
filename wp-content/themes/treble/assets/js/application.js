@@ -121,7 +121,7 @@ $(document).ready(function(){
     });
     $('.submenu-item').click(function(){
         $(this).addClass('active');
-        $(this).parent().siblings().children().removeClass('active') 
+        $(this).parent().siblings().children().removeClass('active'); 
     });
     $('.plugin-filter-elements').mixitup({
         targetSelector: '.mix',
@@ -228,6 +228,34 @@ $( document ).ajaxComplete(function() {
         
         window.location.hash= "!";
         return false;
+    });
+});
+/*
+*   BLOG
+*
+*   
+*/
+
+$('#page-blog .submenu ul li a').click(function(event) {
+    var cat = $(this).html();
+    
+$.ajax(
+    {
+        url : ajaxurl,
+        type: "POST",
+        data: {
+            action: "cat_action",
+            categ: cat
+
+        },
+        success:function(data, textStatus, jqXHR)
+        {
+            $('#insert-text').html("<?php echo utf8_encode(strftime('%d de %B de %Y'));?>");
+        },
+        error: function(jqXHR, textStatus, errorThrown)
+        {
+            alert(errorThrown);    
+        }
     });
 });
 

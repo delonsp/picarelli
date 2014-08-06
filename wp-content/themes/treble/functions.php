@@ -1,5 +1,26 @@
 <?php 
 
+
+/**
+*Ajax functions for showing info to the user
+*/
+
+
+function cat_filter() {
+    
+    echo $_POST['categ'];
+    die();
+   	
+}
+
+add_action( 'wp_ajax_nopriv_cat_action', 'cat_filter' );
+add_action( 'wp_ajax_cat_action', 'cat_filter' );
+
+/**
+*New thumbnail size for front page
+*/
+
+
 add_theme_support( 'post-thumbnails' ); 
 set_post_thumbnail_size( 300, 300 );
 if ( function_exists( 'add_image_size' ) ) { 

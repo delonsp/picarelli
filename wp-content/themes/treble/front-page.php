@@ -141,7 +141,7 @@
                         <a href="#<?php bloginfo('template_url'); ?>/pages/exams/ecocardiograma.html" data-destination="portfolio-items" data-insert="before">
                             <img src="http://placehold.it/390x300" alt="Treble">
                             <div class="portfolio-overlay">
-                                <h4>Ecocardiograma</h4>
+                                <h4>Ecocardiograma com doppler</h4>
                             </div>
                         </a>
                     </li>
@@ -149,7 +149,7 @@
                         <a href="#<?php bloginfo('template_url'); ?>/pages/exams/MAPA.html" data-destination="portfolio-items" data-insert="before">
                             <img src="http://placehold.it/390x300" alt="Treble">
                             <div class="portfolio-overlay">
-                                <h4>MAPA</h4>
+                                <h4>MAPA e MRPA</h4>
                             </div>
                         </a>
                     </li>
@@ -174,6 +174,14 @@
                             <img src="http://placehold.it/390x300" alt="Treble">
                             <div class="portfolio-overlay">
                                 <h4>Ecocardiograma com EcoStress</h4>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="span4 mix cardiologia">
+                        <a href="#http://localhost/picarelli/wp-content/themes/treble/pages/exams/ecostress.html" data-destination="portfolio-items" data-insert="before">
+                            <img src="http://placehold.it/390x300" alt="Treble">
+                            <div class="portfolio-overlay">
+                                <h4>Eletrocardiografia de alta resolução</h4>
                             </div>
                         </a>
                     </li>
@@ -460,22 +468,22 @@
                 <nav class="submenu">
                     <ul>
                         <li>
-                            <a href="<?php bloginfo('template_url');?>/pages/blog/blog.html">Tudo</a>
+                            <a>Tudo</a>
                         </li>
                         <li>
-                            <a href="<?php bloginfo('template_url');?>/pages/blog/blog.html">Cardiologia</a>
+                            <a>Cardiologia</a>
                         </li>
                         <li>
-                            <a href="<?php bloginfo('template_url');?>/pages/blog/blog.html">Cirurgia vascular</a>
+                            <a>Cirurgia Vascular</a>
                         </li>
                         <li>
-                            <a href="<?php bloginfo('template_url');?>/pages/blog/blog.html">Urologia</a>
+                            <a>Urologia</a>
                         </li>
                         <li>
-                            <a href="<?php bloginfo('template_url');?>/pages/blog/blog.html">Saúde Preventiva</a>
+                            <a>Saúde Preventiva</a>
                         </li>
                         <li>
-                            <a href="<?php bloginfo('template_url');?>/pages/blog/blog.html">Outros</a>
+                            <a>Outros</a>
                         </li>
                     </ul>
                 </nav>
@@ -484,10 +492,12 @@
             
             <!-- Article -->
             <article>
+                
                 <!-- Blog articles -->
                 <ul class="thumbnails">
+                    <li id="insert-text"></li>
                     <?php if ( have_posts() ) : 
-                        $the_query = new WP_Query( 'showposts=5' );
+                        $the_query = new WP_Query('category_name=Cardiologia&posts_per_page=6');
                         while ($the_query -> have_posts()) : $the_query -> the_post(); ?>
                             <!-- Blog post -->
                                 <li class="span4">
@@ -657,6 +667,7 @@
     <![endif]-->
     
     <script>
+        
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
         m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
