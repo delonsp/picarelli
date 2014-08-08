@@ -18,8 +18,35 @@ Tags: Tags to locate your theme in the WordPress theme repository
 #appendedInputButton {
 	height: 35px;
 }
-/*.dark-grey {
-    color: black;
-}*/
+
+#page-welcome #welcome-messages {
+  margin-top: 35px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  z-index: 123123;
+}
+#page-welcome #welcome-messages h2 {
+  margin: 0px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+#page-welcome #welcome-messages ul,
+#page-welcome #welcome-messages li {
+  margin: 0px;
+  padding: 0px;
+}
+#page-welcome #welcome-messages.divider:after {
+  margin: auto auto 14px;
+  padding-bottom: 5px;
+}
+#page-welcome #welcome-messages + p {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 10px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
 
 @import url("http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,700,600,300,800")

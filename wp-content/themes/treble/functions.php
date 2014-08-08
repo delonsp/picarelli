@@ -8,9 +8,49 @@
 
 function cat_filter() {
     
-    echo $_POST['categ'];
-    die();
-   	
+	
+	if ($_POST['categ'] == "Tudo" || !isset($_POST['categ'])) {
+		$cat = "";
+	} else {
+		$cat = $_POST['categ'];
+	}
+	
+	//if ($cat ==="Outros") // preencher
+
+	$the_query = new WP_Query("category_name=$cat&posts_per_page=6");
+	 if ( $the_query -> have_posts()) : 
+         
+         while ($the_query -> have_posts()) :
+         	$the_query -> the_post(); 
+             // Blog post -->
+                 echo "<li class=\"span4\">";
+                
+                     // Blog image -->
+                     echo "<a href=\"",the_permalink(),"\"";
+                  	 echo "<div style=''>",the_post_thumbnail('front-page-size'),"</div>";
+                     echo "</a>";
+                    
+                     // Blog title -->
+                     echo "<h5>",the_title(),"<br/>";
+                     echo "<small>",the_time('j \d\e F \d\e Y'),"</small>";
+                     echo "</h5>";
+                    
+                     //<!-- Blog post description -->
+                     echo "<p class=\"smallFontBy08\">";
+                     echo substr(strip_tags(get_the_content()),0,250),"...";
+                     echo "</p>";
+                    
+                     //<!-- Blog read more -->
+                     echo "<div class=\"read-more\">";
+                     echo "<a href=\"",the_permalink(),"\">Leia Mais...</a>";
+                     echo "</div>";
+
+                 echo "</li>";
+         endwhile;
+      else: 
+             echo "<li class=\"span4\">";_e('Desculpe, não há posts.'); echo "</li>";
+      endif; 
+   	die();
 }
 
 add_action( 'wp_ajax_nopriv_cat_action', 'cat_filter' );
@@ -24,7 +64,7 @@ add_action( 'wp_ajax_cat_action', 'cat_filter' );
 add_theme_support( 'post-thumbnails' ); 
 set_post_thumbnail_size( 300, 300 );
 if ( function_exists( 'add_image_size' ) ) { 
-	add_image_size( 'front-page-size', 390, 300); //390 x 300 pixels (not cropped)
+	add_image_size( 'front-page-size', 390, 300); //390 x 300 pixels (soft cropped)
 	
 }
 

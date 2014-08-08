@@ -151,6 +151,10 @@ $(document).ready(function(){
         onMixStart: null,
         onMixEnd: null
     });
+
+    $('.plugin-display-elements').mixitup({
+        effects: ['fade','rotateY']
+    });
     
     /*
     *   PAGE | Twitter 
@@ -189,6 +193,11 @@ $(document).ready(function(){
         });
         
     }, 1000);
+
+    // Trigger 6 most recent posts from WP, no particular category
+
+    $('#cat-all').trigger('click');
+
 });
 
 
@@ -250,7 +259,7 @@ $.ajax(
         },
         success:function(data, textStatus, jqXHR)
         {
-            $('#insert-text').html("<?php echo utf8_encode(strftime('%d de %B de %Y'));?>");
+            $('#insert-text').html(data);
         },
         error: function(jqXHR, textStatus, errorThrown)
         {
