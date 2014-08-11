@@ -16,6 +16,7 @@
 
 // ** Configurações do MySQL - Você pode pegar essas informações com o serviço de hospedagem ** //
 /** O nome do banco de dados do WordPress */
+<<<<<<< HEAD
 define('DB_NAME', 'picarelli');
 
 /** Usuário do banco de dados MySQL */
@@ -26,6 +27,18 @@ define('DB_PASSWORD', 'root');
 
 /** nome do host do MySQL */
 define('DB_HOST', 'localhost');
+=======
+define('DB_NAME', 'picarellidiagn');
+
+/** Usuário do banco de dados MySQL */
+define('DB_USER', 'picarellidiagn');
+
+/** Senha do banco de dados MySQL */
+define('DB_PASSWORD', 'kQ1QRjx7q');
+
+/** nome do host do MySQL */
+define('DB_HOST', 'mysql01.picarellidiagnosticos.com.br');
+>>>>>>> a797504814edc2d0b61b81e92add8b20849d0436
 
 /** Conjunto de caracteres do banco de dados a ser usado na criação das tabelas. */
 define('DB_CHARSET', 'utf8');
@@ -42,6 +55,7 @@ define('DB_COLLATE', '');
  *
  * @since 2.6.0
  */
+<<<<<<< HEAD
 define('AUTH_KEY',         'bWe@l!Z^H6l%lxyMBuy*B#io+x?Jvj>[A~Nj7#|8`D#M~g#k52Wm3N0CQrtEHh4a');
 define('SECURE_AUTH_KEY',  'xb=Vg9-D|/oLezx{^3gP,_ns(z$e&A|S07J?sJ|);)Gfi$-,4N%@bOki{DU#[-BD');
 define('LOGGED_IN_KEY',    '|F#|-D~hSG2FXPL)30Q6G JX_|UxX%s^vPj>UtPRD:~</QS-,K-9g~zzD8GYVrSx');
@@ -50,6 +64,16 @@ define('AUTH_SALT',        'v9-U(X9DMJyn2&a+zE}t-8++7QWV:Z)k.$9+zN_ S+K&V-Y=0cq%
 define('SECURE_AUTH_SALT', 'Hj$lA]FAif-3c!}i#SX-PvYpW*:4`IUv}ij:XA]SI7%PT.Nk$iv.KDJ^T@tq!BSm');
 define('LOGGED_IN_SALT',   'TX|rGPD .oG[bu@d+|wyK,Lsjz~IEO5q?KFBM-=TDbsDhm9$ [,q:wnN.%4a+XFK');
 define('NONCE_SALT',       '>|J1~8)~>4s~+CD*nIP_)zE3J-s@e+n&`qGI ]YL9)TQ ROaAKUn(C<=j`yBjE6G');
+=======
+define('AUTH_KEY',         'put your unique phrase here');
+define('SECURE_AUTH_KEY',  'put your unique phrase here');
+define('LOGGED_IN_KEY',    'put your unique phrase here');
+define('NONCE_KEY',        'put your unique phrase here');
+define('AUTH_SALT',        'put your unique phrase here');
+define('SECURE_AUTH_SALT', 'put your unique phrase here');
+define('LOGGED_IN_SALT',   'put your unique phrase here');
+define('NONCE_SALT',       'put your unique phrase here');
+>>>>>>> a797504814edc2d0b61b81e92add8b20849d0436
 
 /**#@-*/
 
@@ -59,7 +83,11 @@ define('NONCE_SALT',       '>|J1~8)~>4s~+CD*nIP_)zE3J-s@e+n&`qGI ]YL9)TQ ROaAKUn
  * Você pode ter várias instalações em um único banco de dados se você der para cada um um único
  * prefixo. Somente números, letras e sublinhados!
  */
+<<<<<<< HEAD
 $table_prefix  = 'wp_';
+=======
+$table_prefix  = 'wp_';
+>>>>>>> a797504814edc2d0b61b81e92add8b20849d0436
 
 /**
  * O idioma localizado do WordPress é o inglês por padrão.

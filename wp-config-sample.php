@@ -16,6 +16,7 @@
 
 // ** Configurações do MySQL - Você pode pegar essas informações com o serviço de hospedagem ** //
 /** O nome do banco de dados do WordPress */
+<<<<<<< HEAD
 define('DB_NAME', 'nomedoBD');
 
 /** Usuário do banco de dados MySQL */
@@ -26,6 +27,18 @@ define('DB_PASSWORD', 'password_here');
 
 /** nome do host do MySQL */
 define('DB_HOST', 'localhost');
+=======
+define('DB_NAME', 'picarellidiagn');
+
+/** Usuário do banco de dados MySQL */
+define('DB_USER', 'picarellidiagn');
+
+/** Senha do banco de dados MySQL */
+define('DB_PASSWORD', 'kQ1QRjx7q');
+
+/** nome do host do MySQL */
+define('DB_HOST', 'mysql01.picarellidiagnosticos.com.br');
+>>>>>>> a797504814edc2d0b61b81e92add8b20849d0436
 
 /** Conjunto de caracteres do banco de dados a ser usado na criação das tabelas. */
 define('DB_CHARSET', 'utf8');

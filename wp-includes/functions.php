@@ -41,7 +41,10 @@ function mysql2date( $format, $date, $translate = true ) {
 		return date( $format, $i );
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> a797504814edc2d0b61b81e92add8b20849d0436
 /**
  * Retrieve the current time based on specified type.
  *
@@ -58,7 +61,10 @@ function mysql2date( $format, $date, $translate = true ) {
  * @param int|bool $gmt Optional. Whether to use GMT timezone. Default is false.
  * @return int|string String if $type is 'gmt', int if $type is 'timestamp'.
  */
+<<<<<<< HEAD
 
+=======
+>>>>>>> a797504814edc2d0b61b81e92add8b20849d0436
 function current_time( $type, $gmt = 0 ) {
 	switch ( $type ) {
 		case 'mysql':
