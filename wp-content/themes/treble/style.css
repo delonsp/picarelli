@@ -19,33 +19,34 @@ Tags: Tags to locate your theme in the WordPress theme repository
 	height: 35px;
 }
 
-#page-welcome #welcome-messages {
-  margin-top: 35px;
-  width: 100%;
-  overflow: hidden;
-  position: relative;
-  z-index: 123123;
-}
+
+
 #page-welcome #welcome-messages h2 {
   margin: 0px;
   padding-top: 10px;
   padding-bottom: 5px;
 }
-#page-welcome #welcome-messages ul,
-#page-welcome #welcome-messages li {
-  margin: 0px;
-  padding: 0px;
+
+/* 
+  Mistura de regras de CSS do Bootstrap/Treble com do Wordpress para aumentar o tamanho da letra
+  do parágrafo de comentários
+*/ 
+
+#page-blog-list article .comment-body p {
+  font-size: 1.2em;
 }
-#page-welcome #welcome-messages.divider:after {
-  margin: auto auto 14px;
-  padding-bottom: 5px;
+
+/* 
+  Mudança de regras de CSS do Wordpress para aumentar o tamanho da letra
+  do parágrafo de comentários
+*/ 
+
+.comment-author .fn {
+  font-size: 1.2em;
 }
-#page-welcome #welcome-messages + p {
-  font-weight: bold;
-  text-transform: uppercase;
-  margin-top: 10px;
-  font-weight: 800;
-  letter-spacing: 2px;
+
+.comment-author .says {
+  font-size: 1.2em;
 }
 
 

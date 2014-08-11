@@ -8,11 +8,10 @@
 *function to return category links
 */
 
-function my_cat_link($cat_name) {
+function my_cat_link($cat_id) {
 
-	$category_id = get_cat_ID($cat_name);
-    // Get the URL of this category
-    $category_link = get_category_link( $category_id );
+	// Get the URL of this category
+    $category_link = get_category_link( $cat_id );
     echo esc_url( $category_link );
 }
 

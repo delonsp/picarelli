@@ -5,8 +5,8 @@
   <div class="container">
     <!-- Header -->
     <header>
-      <h4 class="line-divider">Blog</h4>
-      <h1>Blog Posts</h1>
+      <h4 class="line-divider">Artigos & Notícias</h4>
+      <h1>Postagens</h1>
       <div class="row">
         <div class="span8 offset2">
             <div class="input-append">
@@ -33,91 +33,16 @@
               </h5>
               
               <?php the_content();?>
+
+              <?php if ( comments_open() || get_comments_number() ) {
+                  comments_template();
+              }?>
             
             <?php endwhile;?>
               
           </article>
           <?php// twentyfourteen_post_nav();?>
-          <!-- End Article -->
           
-          <!-- Blog comments -->
-          <div class="comments">
-              <a href="#">4 comments</a>
-          </div>
-          <div class="comments-details">
-              <div class="media">
-                  <div class="pull-left">
-                      <img src="http://placehold.it/60x60" alt="Treble">
-                  </div> 
-                  <div class="media-body">
-                      <div class="comments-post-info">
-                          <small><a href="#">Team member</a>, April 10, 2013, <a href="#write-replay">Replay</a></small>
-                      </div>
-                      <p>
-                          Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.
-                      </p>
-                  </div>
-              </div>
-              <div class="media">
-                  <div class="pull-left">
-                      <img src="http://placehold.it/60x60" alt="Treble">
-                  </div> 
-                  <div class="media-body">
-                      <div class="comments-post-info">
-                          <small><a href="#">Team member</a>, April 10, 2013, <a href="#write-replay">Replay</a></small>
-                      </div>
-                      <p>
-                          Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.
-                      </p>
-                  </div>
-              </div>
-              <div class="media">
-                  <div class="pull-left">
-                      <img src="http://placehold.it/60x60" alt="Treble">
-                  </div> 
-                  <div class="media-body">
-                      <div class="comments-post-info">
-                          <small><a href="#">Team member</a>, April 10, 2013, <a href="#write-replay">Replay</a></small>
-                      </div>
-                      <p>
-                          Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.
-                      </p>
-                      
-                      <div class="media">
-                          <div class="pull-left">
-                              <img src="http://placehold.it/60x60" alt="Treble">
-                          </div> 
-                          <div class="media-body">
-                              <div class="comments-post-info">
-                                  <small><a href="#">Team member</a>, April 10, 2013, <a href="#write-replay">Replay</a></small>
-                              </div>
-                              Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. 
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-          <!-- End Blog comments -->
-          
-          <!-- Blog Write comment -->
-          <div class="write-comment" id="write-replay">
-              <h6>Drop a comment</h6>
-              <p>
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. 
-              </p>
-              <div class="row-fluid">
-                  <div class="span8">
-                      <form>
-                          <input type="text" class="span12" placeholder="Title">
-                          <input type="text" class="span12" placeholder="Email">
-                          <textarea rows="5" class="span12"></textarea>
-                          <button type="submit" class="btn btn-primary">Post a comment</button>
-                      </form>
-                  </div>
-              </div>
-          </div>
-          <!-- End Blog Write comment -->
-
       </div>
       <div class="span4 blog-list-right">
         <?php get_sidebar();?>
