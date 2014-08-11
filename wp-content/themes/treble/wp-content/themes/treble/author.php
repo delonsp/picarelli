@@ -1,74 +1,60 @@
 <?php
 /**
- * The template for displaying Author archive pages
- *
- * @link http://codex.wordpress.org/Template_Hierarchy
+ * The template for displaying Author Archive pages.
  *
  * @package WordPress
- * @subpackage Twenty_Fourteen
- * @since Twenty Fourteen 1.0
+ * @subpackage Twenty_Ten
+ * @since Twenty Ten 1.0
  */
 
 get_header(); ?>
 
-	<section id="primary" class="content-area">
-		<div id="content" class="site-content" role="main">
-
-			<?php if ( have_posts() ) : ?>
-
-			<header class="archive-header">
-				<h1 class="archive-title">
-					<?php
-						/*
-						 * Queue the first post, that way we know what author
-						 * we're dealing with (if that is the case).
-						 *
-						 * We reset this later so we can run the loop properly
-						 * with a call to rewind_posts().
-						 */
-						the_post();
-
-						printf( __( 'All posts by %s', 'twentyfourteen' ), get_the_author() );
-					?>
-				</h1>
-				<?php if ( get_the_author_meta( 'description' ) ) : ?>
-				<div class="author-description"><?php the_author_meta( 'description' ); ?></div>
-				<?php endif; ?>
-			</header><!-- .archive-header -->
-
-			<?php
-					/*
-					 * Since we called the_post() above, we need to rewind
-					 * the loop back to the beginning that way we can run
-					 * the loop properly, in full.
-					 */
-					rewind_posts();
-
-					// Start the Loop.
-					while ( have_posts() ) : the_post();
-
-						/*
-						 * Include the post format-specific template for the content. If you want to
-						 * use this in a child theme, then include a file called called content-___.php
-						 * (where ___ is the post format) and that will be used instead.
-						 */
-						get_template_part( 'content', get_post_format() );
-
-					endwhile;
-					// Previous/next page navigation.
-					twentyfourteen_paging_nav();
-
-				else :
-					// If no content, include the "No posts found" template.
-					get_template_part( 'content', 'none' );
-
-				endif;
-			?>
-
-		</div><!-- #content -->
-	</section><!-- #primary -->
+		<div id="container">
+			<div id="content" role="main">
 
 <?php
-get_sidebar( 'content' );
-get_sidebar();
-get_footer();
+	/* Queue the first post, that way we know who
+	 * the author is when we try to get their name,
+	 * URL, description, avatar, etc.
+	 *
+	 * We reset this later so we can run the loop
+	 * properly with a call to rewind_posts().
+	 */
+	if ( have_posts() )
+		the_post();
+?>
+
+				<h1 class="page-title author"><?php printf( __( 'Author Archives: %s', 'twentyten' ), "<span class='vcard'><a class='url fn n' href='" . get_author_posts_url( get_the_author_meta( 'ID' ) ) . "' title='" . esc_attr( get_the_author() ) . "' rel='me'>" . get_the_author() . "</a></span>" ); ?></h1>
+
+<?php
+// If a user has filled out their description, show a bio on their entries.
+if ( get_the_author_meta( 'description' ) ) : ?>
+					<div id="entry-author-info">
+						<div id="author-avatar">
+							<?php echo get_avatar( get_the_author_meta( 'user_email' ), apply_filters( 'twentyten_author_bio_avatar_size', 60 ) ); ?>
+						</div><!-- #author-avatar -->
+						<div id="author-description">
+							<h2><?php printf( __( 'About %s', 'twentyten' ), get_the_author() ); ?></h2>
+							<?php the_author_meta( 'description' ); ?>
+						</div><!-- #author-description	-->
+					</div><!-- #entry-author-info -->
+<?php endif; ?>
+
+<?php
+	/* Since we called the_post() above, we need to
+	 * rewind the loop back to the beginning that way
+	 * we can run the loop properly, in full.
+	 */
+	rewind_posts();
+
+	/* Run the loop for the author archive page to output the authors posts
+	 * If you want to overload this in a child theme then include a file
+	 * called loop-author.php and that will be used instead.
+	 */
+	 get_template_part( 'loop', 'author' );
+?>
+			</div><!-- #content -->
+		</div><!-- #container -->
+
+<?php get_sidebar(); ?>
+<?php get_footer(); ?>
