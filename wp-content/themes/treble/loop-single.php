@@ -10,7 +10,7 @@
  * This can be overridden in child themes with loop-single.php.
  *
  * @package WordPress
- * @subpackage Twenty_Ten
+ * @subpackage Treble
  * @since Twenty Ten 1.2
  */
 
@@ -59,6 +59,7 @@
           </article>
               
           <?php endwhile;?>
+          
           <?php wpbeginner_numeric_posts_nav(); ?>
           
       </div>

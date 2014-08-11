@@ -14,7 +14,7 @@
  * <code>get_template_part( 'loop', 'index' );</code>
  *
  * @package WordPress
- * @subpackage Twenty_Ten
+ * @subpackage Treble
  * @since Twenty Ten 1.0
  */
 

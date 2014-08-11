@@ -3,7 +3,7 @@
  * The template for displaying Search Results pages.
  *
  * @package WordPress
- * @subpackage Twenty_Ten
+ * @subpackage Treble
  * @since Twenty Ten 1.0
  */
 
