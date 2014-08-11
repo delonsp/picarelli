@@ -82,6 +82,8 @@ if ( function_exists( 'add_image_size' ) ) {
 	
 }
 
+
+
 function wpbootstrap_scripts_with_jquery()
 {
 	// Register the script like this for a theme:

@@ -9,10 +9,12 @@
       <h1>Postagens</h1>
       <div class="row">
         <div class="span8 offset2">
+          <form role="search" method="get" id="searchform" class="searchform" action="http://localhost/picarelli/">
             <div class="input-append">
-              <input class="span5" id="appendedInputButton" type="text" placeholder="Search Blog">
-              <button class="btn btn-primary sicon-search sicon-white" type="button"><i>Search</i></button>
+              <input name="s" class="span5" id="appendedInputButton" type="text" placeholder="Busca">
+              <input class="btn btn-primary sicon-search sicon-white" id="searchsubmit" type="submit" value="Pesquisar">
             </div>
+          </form>
         </div>
       </div>
     </header>
@@ -38,9 +40,9 @@
                   comments_template();
               }?>
             
-            <?php endwhile;?>
-              
           </article>
+              
+          <?php endwhile;?>
           <?php// twentyfourteen_post_nav();?>
           
       </div>

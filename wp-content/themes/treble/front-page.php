@@ -457,10 +457,12 @@
                 <h1>Postagens recentes</h1>
                 <div class="row">
                     <div class="span8 offset2">
+                      <form role="search" method="get" id="searchform" class="searchform" action="http://localhost/picarelli/">
                         <div class="input-append">
-                          <input class="span5" id="appendedInputButton" type="text" placeholder="Busca no Blog">
-                          <button class="btn btn-primary sicon-search sicon-white" type="button"><i>Busca</i></button>
+                          <input name="s" class="span5" id="appendedInputButton" type="text" placeholder="Busca">
+                          <input class="btn btn-primary sicon-search sicon-white" id="searchsubmit" type="submit" value="Pesquisar">
                         </div>
+                      </form>
                     </div>
                 </div>
                 
@@ -504,7 +506,7 @@
             <footer>
                 <!-- More blog posts -->
                 <div class="show-more-cube">
-                    <a href="<?php bloginfo('template_url');?>/pages/blog/blog.html"><span>Todos os<br/>Posts</span></a>
+                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><span>Todos os<br/>Posts</span></a>
                 </div>
             </footer>
             <!-- End Footer -->
