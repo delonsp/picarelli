@@ -1,5 +1,5 @@
-<!-- Latest blog posts block -->
-<div class="block">
+
+<!-- <div class="block">
     <h6>Lates blog posts</h6>
     <ul class="simple-link-list">
         <li>
@@ -21,10 +21,10 @@
             <a href="blog_6.html">Blog post title 6</a>
         </li>
     </ul>
-</div>
+</div> -->
 
 <!-- Tags -->
-<div class="block">
+<!-- <div class="block">
     <h6>Categories</h6>
     <nav class="submenu">
         <ul>
@@ -48,13 +48,13 @@
             </li>
         </ul>
     </nav>
-</div>
+</div> -->
 
 <!-- Twitter -->
-<div class="block">
+<!-- <div class="block">
     <h6>Twitter</h6>
     <div class="twitterfeed"></div>
-</div>
+</div> -->
 
 
 
@@ -69,11 +69,10 @@
  * @since Twenty Fourteen 1.0
  */
 
-// if ( ! is_active_sidebar( 'sidebar-2' ) ) {
-// 	return;
-// }
+if ( ! is_active_sidebar( 'sidebar-2' ) ) {
+	return;
+}
 ?>
-<!-- <div id="content-sidebar" class="content-sidebar widget-area" role="complementary">
+<div id="content-sidebar" class="content-sidebar widget-area" role="complementary">
 	<?php dynamic_sidebar( 'sidebar-2' ); ?>
-</div><!-- #content-sidebar -->
- -->
+</div><!-- #content-sidebar

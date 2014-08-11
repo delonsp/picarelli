@@ -1,5 +1,20 @@
 <?php 
 
+/**
+* My functions
+*/
+
+/**
+*function to return category links
+*/
+
+function my_cat_link($cat_name) {
+
+	$category_id = get_cat_ID($cat_name);
+    // Get the URL of this category
+    $category_link = get_category_link( $category_id );
+    echo esc_url( $category_link );
+}
 
 /**
 *Ajax functions for showing info to the user

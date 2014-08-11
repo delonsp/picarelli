@@ -37,6 +37,7 @@
             <?php endwhile;?>
               
           </article>
+          <?php// twentyfourteen_post_nav();?>
           <!-- End Article -->
           
           <!-- Blog comments -->
