@@ -293,8 +293,33 @@
                         
                         <!-- Team member name and function -->
                         <h5>
-                            João José<br/>
-                            <small>Clínico Geral</small>
+                            Brunello Picarelli<br/>
+                            <small>Cardiologista</small>
+                        </h5>
+                        
+                        <!-- Team member short info -->
+                        <p class="smallFontBy08">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua,consectetur adipisicing elit.</p>
+                    </li>
+                    <li class="span4 center">
+                         <div class="item">
+                            <!-- Team member image -->
+                            <img class="img-circle" src="http://placehold.it/280x280" alt="Treble">
+                            
+                            <!-- Team memeber details, activated on hover -->
+                            <div class="about-overlay img-circle">
+                                <div class="social-icons">
+                                    <a class="btn btn-info btn-large" href="#">
+                                        <i class="icon-white icon-folder-open"></i>&nbsp;Currículo
+                                    </a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Team member name and function -->
+                        <h5>
+                            Adriano César Guazelli<br/>
+                            <small>Pneumologista</small>
                         </h5>
                         
                         <!-- Team member short info -->
@@ -314,8 +339,8 @@
                         </div>
                         
                         <h5>
-                            João José<br/>
-                            <small>Clínico Geral</small>
+                            Alain Machado da Silva Dutra<br/>
+                            <small>Urologista</small>
                         </h5>
                         <p class="smallFontBy08">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua,consectetur adipisicing elit.</p>
                     </li>
@@ -333,8 +358,8 @@
                         </div>
                         
                         <h5>
-                            João José<br/>
-                            <small>Clínico Geral</small>
+                            Alessandro Blassioli Barbosa<br/>
+                            <small>Neurocirurgião</small>
                         </h5>
                         <p class="smallFontBy08">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua,consectetur adipisicing elit.</p>
                     </li>
@@ -352,8 +377,8 @@
                         </div>
                         
                         <h5>
-                            João José<br/>
-                            <small>Clínico Geral</small>
+                            Ana Paula Rodrigues<br/>
+                            <small>Cirurgiã Vascular</small>
                         </h5>
                         <p class="smallFontBy08">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua,consectetur adipisicing elit.</p>
                     </li>
@@ -371,8 +396,8 @@
                         </div>
                         
                         <h5>
-                            João José<br/>
-                            <small>Clínico Geral</small>
+                            Bruno Oliveira Cardelino<br/>
+                            <small>Cirurgião Vascular</small>
                         </h5>
                         <p class="smallFontBy08">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua,consectetur adipisicing elit.</p>
                     </li>
@@ -390,9 +415,284 @@
                         </div>
                         
                         <h5>
-                            João José<br/>
-                            <small>Clínico Geral</small>
+                            Dumitriu Zinuno Saucedo<br/>
+                            <small>Cirurgião Vascular</small>
                         </h5>
+                        <p class="smallFontBy08">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua,consectetur adipisicing elit.</p>
+                    </li>
+                    <li class="span4 center">
+                         <div class="item">
+                            <!-- Team member image -->
+                            <img class="img-circle" src="http://placehold.it/280x280" alt="Treble">
+                            
+                            <!-- Team memeber details, activated on hover -->
+                            <div class="about-overlay img-circle">
+                                <div class="social-icons">
+                                    <a class="btn btn-info btn-large" href="#">
+                                        <i class="icon-white icon-folder-open"></i>&nbsp;Currículo
+                                    </a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Team member name and function -->
+                        <h5>
+                            Fernanda Bezerra dos Santos<br/>
+                            <small>Ecocardiografista</small>
+                        </h5>
+                        
+                        <!-- Team member short info -->
+                        <p class="smallFontBy08">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua,consectetur adipisicing elit.</p>
+                    </li>
+                    <li class="span4 center">
+                         <div class="item">
+                            <!-- Team member image -->
+                            <img class="img-circle" src="http://placehold.it/280x280" alt="Treble">
+                            
+                            <!-- Team memeber details, activated on hover -->
+                            <div class="about-overlay img-circle">
+                                <div class="social-icons">
+                                    <a class="btn btn-info btn-large" href="#">
+                                        <i class="icon-white icon-folder-open"></i>&nbsp;Currículo
+                                    </a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Team member name and function -->
+                        <h5>
+                            Isaac Moscoso<br/>
+                            <small>Ecocardiografista</small>
+                        </h5>
+                        
+                        <!-- Team member short info -->
+                        <p class="smallFontBy08">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua,consectetur adipisicing elit.</p>
+                    </li>
+                    <li class="span4 center">
+                         <div class="item">
+                            <!-- Team member image -->
+                            <img class="img-circle" src="http://placehold.it/280x280" alt="Treble">
+                            
+                            <!-- Team memeber details, activated on hover -->
+                            <div class="about-overlay img-circle">
+                                <div class="social-icons">
+                                    <a class="btn btn-info btn-large" href="#">
+                                        <i class="icon-white icon-folder-open"></i>&nbsp;Currículo
+                                    </a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Team member name and function -->
+                        <h5>
+                            James Sung Te Chen<br/>
+                            <small>Radiologista</small>
+                        </h5>
+                        
+                        <!-- Team member short info -->
+                        <p class="smallFontBy08">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua,consectetur adipisicing elit.</p>
+                    </li>
+                    <li class="span4 center">
+                         <div class="item">
+                            <!-- Team member image -->
+                            <img class="img-circle" src="http://placehold.it/280x280" alt="Treble">
+                            
+                            <!-- Team memeber details, activated on hover -->
+                            <div class="about-overlay img-circle">
+                                <div class="social-icons">
+                                    <a class="btn btn-info btn-large" href="#">
+                                        <i class="icon-white icon-folder-open"></i>&nbsp;Currículo
+                                    </a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Team member name and function -->
+                        <h5>
+                            Juan Manuel Sanchez Arana<br/>
+                            <small>Cardiologista</small>
+                        </h5>
+                        
+                        <!-- Team member short info -->
+                        <p class="smallFontBy08">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua,consectetur adipisicing elit.</p>
+                    </li>
+                    <li class="span4 center">
+                         <div class="item">
+                            <!-- Team member image -->
+                            <img class="img-circle" src="http://placehold.it/280x280" alt="Treble">
+                            
+                            <!-- Team memeber details, activated on hover -->
+                            <div class="about-overlay img-circle">
+                                <div class="social-icons">
+                                    <a class="btn btn-info btn-large" href="#">
+                                        <i class="icon-white icon-folder-open"></i>&nbsp;Currículo
+                                    </a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Team member name and function -->
+                        <h5>
+                            Marcelo de Lima Oliveira<br/>
+                            <small>Neurocirurgião</small>
+                        </h5>
+                        
+                        <!-- Team member short info -->
+                        <p class="smallFontBy08">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua,consectetur adipisicing elit.</p>
+                    </li>
+                    <li class="span4 center">
+                         <div class="item">
+                            <!-- Team member image -->
+                            <img class="img-circle" src="http://placehold.it/280x280" alt="Treble">
+                            
+                            <!-- Team memeber details, activated on hover -->
+                            <div class="about-overlay img-circle">
+                                <div class="social-icons">
+                                    <a class="btn btn-info btn-large" href="#">
+                                        <i class="icon-white icon-folder-open"></i>&nbsp;Currículo
+                                    </a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Team member name and function -->
+                        <h5>
+                            Mariane Pimentei<br/>
+                            <small>Pneumologista</small>
+                        </h5>
+                        
+                        <!-- Team member short info -->
+                        <p class="smallFontBy08">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua,consectetur adipisicing elit.</p>
+                    </li>
+                    <li class="span4 center">
+                         <div class="item">
+                            <!-- Team member image -->
+                            <img class="img-circle" src="http://placehold.it/280x280" alt="Treble">
+                            
+                            <!-- Team memeber details, activated on hover -->
+                            <div class="about-overlay img-circle">
+                                <div class="social-icons">
+                                    <a class="btn btn-info btn-large" href="#">
+                                        <i class="icon-white icon-folder-open"></i>&nbsp;Currículo
+                                    </a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Team member name and function -->
+                        <h5>
+                            Maurício da Silva Rocha<br/>
+                            <small>Cardiologista</small>
+                        </h5>
+                        
+                        <!-- Team member short info -->
+                        <p class="smallFontBy08">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua,consectetur adipisicing elit.</p>
+                    </li>
+                    <li class="span4 center">
+                         <div class="item">
+                            <!-- Team member image -->
+                            <img class="img-circle" src="http://placehold.it/280x280" alt="Treble">
+                            
+                            <!-- Team memeber details, activated on hover -->
+                            <div class="about-overlay img-circle">
+                                <div class="social-icons">
+                                    <a class="btn btn-info btn-large" href="#">
+                                        <i class="icon-white icon-folder-open"></i>&nbsp;Currículo
+                                    </a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Team member name and function -->
+                        <h5>
+                            Obdulia Esperanza Linares Camacho<br/>
+                            <small>Cardiologista</small>
+                        </h5>
+                        
+                        <!-- Team member short info -->
+                        <p class="smallFontBy08">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua,consectetur adipisicing elit.</p>
+                    </li>
+                    <li class="span4 center">
+                         <div class="item">
+                            <!-- Team member image -->
+                            <img class="img-circle" src="http://placehold.it/280x280" alt="Treble">
+                            
+                            <!-- Team memeber details, activated on hover -->
+                            <div class="about-overlay img-circle">
+                                <div class="social-icons">
+                                    <a class="btn btn-info btn-large" href="#">
+                                        <i class="icon-white icon-folder-open"></i>&nbsp;Currículo
+                                    </a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Team member name and function -->
+                        <h5>
+                            Roberto Augusto Vasquez Junior<br/>
+                            <small>Ecocardiografista</small>
+                        </h5>
+                        
+                        <!-- Team member short info -->
+                        <p class="smallFontBy08">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua,consectetur adipisicing elit.</p>
+                    </li>
+                    <li class="span4 center">
+                         <div class="item">
+                            <!-- Team member image -->
+                            <img class="img-circle" src="http://placehold.it/280x280" alt="Treble">
+                            
+                            <!-- Team memeber details, activated on hover -->
+                            <div class="about-overlay img-circle">
+                                <div class="social-icons">
+                                    <a class="btn btn-info btn-large" href="#">
+                                        <i class="icon-white icon-folder-open"></i>&nbsp;Currículo
+                                    </a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Team member name and function -->
+                        <h5>
+                            Roxana Lissete Rodrigues Olmos<br/>
+                            <small>Ecocardiografista</small>
+                        </h5>
+                        
+                        <!-- Team member short info -->
+                        <p class="smallFontBy08">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua,consectetur adipisicing elit.</p>
+                    </li>
+                    <li class="span4 center">
+                         <div class="item">
+                            <!-- Team member image -->
+                            <img class="img-circle" src="http://placehold.it/280x280" alt="Treble">
+                            
+                            <!-- Team memeber details, activated on hover -->
+                            <div class="about-overlay img-circle">
+                                <div class="social-icons">
+                                    <a class="btn btn-info btn-large" href="#">
+                                        <i class="icon-white icon-folder-open"></i>&nbsp;Currículo
+                                    </a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Team member name and function -->
+                        <h5>
+                            Thais Alves de Paula<br/>
+                            <small>Endocrinologista</small>
+                        </h5>
+                        
+                        <!-- Team member short info -->
                         <p class="smallFontBy08">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua,consectetur adipisicing elit.</p>
                     </li>
                 </ul>
