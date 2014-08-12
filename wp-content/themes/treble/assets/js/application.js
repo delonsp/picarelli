@@ -152,9 +152,10 @@ $(document).ready(function(){
         onMixEnd: null
     });
 
-    $('.plugin-display-elements').mixitup({
-        effects: ['fade','rotateY']
-    });
+    //$('.plugin-display-elements').mixitup();
+
+
+    
     
     /*
     *   PAGE | Twitter 
@@ -246,6 +247,8 @@ $( document ).ajaxComplete(function() {
 */
 
 $('#page-blog .submenu ul li a').click(function(event) {
+    $(this).addClass('active');
+    $(this).parent().siblings().children().removeClass('active');
     var cat = $(this).html();
     
 $.ajax(

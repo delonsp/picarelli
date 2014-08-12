@@ -23,7 +23,7 @@ function my_cat_link($cat_id) {
 function cat_filter() {
     
 	
-	if ($_POST['categ'] == "Tudo" || !isset($_POST['categ'])) {
+	if ($_POST['categ'] == "Todos" || !isset($_POST['categ'])) {
 		$cat = "";
 	} else {
 		$cat = $_POST['categ'];
@@ -31,13 +31,13 @@ function cat_filter() {
 	
 	//if ($cat ==="Outros") // preencher
 
-	$the_query = new WP_Query("category_name=$cat&posts_per_page=6");
+	$the_query = new WP_Query("category_name=$cat&posts_per_page=6"); $i=0;
 	 if ( $the_query -> have_posts()) : 
          
          while ($the_query -> have_posts()) :
-         	$the_query -> the_post(); 
+         	$the_query -> the_post(); $i++;
              // Blog post -->
-                 echo "<li class=\"span4\">";
+                 echo "<li class=\"span4 mix\" data-myorder=\"",$i,"\">";
                 
                      // Blog image -->
                      echo "<a href=\"",the_permalink(),"\"";

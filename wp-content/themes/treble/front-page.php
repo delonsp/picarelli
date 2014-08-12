@@ -66,25 +66,10 @@
                     </div>
                 </div>
                     
-                <!-- Sub menu -->
-                <!-- 
-                Params: 
-                    plugin-filter: Defines links for filtering.
-                -->
+                
                 <nav class="submenu">
                     <ul>
-                        <!-- <li>
-                            <a href="#" class="plugin-filter" data-filter="ultra_som_geral">Ultra-Som Geral</a>
-                        </li> -->
-                        <!-- <li>
-                            <a href="#" class="plugin-filter" data-filter="laboratorio">Laboratório</a>
-                        </li> -->
-                        <!-- <li>
-                            <a href="#" class="plugin-filter" data-filter="ultra_som_especializado">Ultra-Som Especializado</a>
-                        </li> -->
-                        <!-- <li>
-                            <a href="#" class="plugin-filter" data-filter="all">Todos</a>
-                        </li> -->
+                        
                         <li>
                             <a href="#<?php bloginfo('template_url'); ?>/pages/exams/cardiologia.html"
                              class="submenu-item active" data-destination="plugin-filter-elements" data-insert="html" >
@@ -188,16 +173,7 @@
                     
                 </ul>
             </article>
-            <!-- End Article -->
-            <!-- Footer -->
-            <!-- <footer>
-                <div class="show-more-cube">
-                     <a href="#<?php bloginfo('template_url'); ?>/pages/exams/readmore.html" data-destination="plugin-filter-elements" data-insert="appendTo" data-action="remove">
-                        <span>Mostre<br/>Mais</span>
-                    </a>
-                </div>
-            </footer> -->
-            <!-- End footer -->
+            
         </div>
     </div>
     <!-- END PAGE | WORK -->
@@ -470,23 +446,17 @@
                 <nav class="submenu">
                     <ul>
                         <li>
-                            <a id="cat-all">Tudo</a>
+                            <a id="cat-all" class="active sort" data-sort="random">Todos</a>
                         </li>
-                        <li>
-                            <a>Cardiologia</a>
-                        </li>
-                        <li>
-                            <a>Cirurgia Vascular</a>
-                        </li>
-                        <li>
-                            <a>Urologia</a>
-                        </li>
-                        <li>
-                            <a>Saúde Preventiva</a>
-                        </li>
-                        <li>
-                            <a>Outros</a>
-                        </li>
+                        <?php $categories = get_categories(); $i=0;
+
+                            foreach ($categories as $category) { $i++; ?>
+                                <li>
+                                    <a class="sort" data-sort="random">
+                                        <?php echo $category->name;?>
+                                    </a>
+                                </li> 
+                            <?php } ?>
                     </ul>
                 </nav>
             </header>

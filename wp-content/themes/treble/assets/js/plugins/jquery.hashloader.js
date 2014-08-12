@@ -105,6 +105,12 @@ $(function() {
                                 $('.plugin-filter-elements').mixitup('remix','all');
                             }, 1000);
                         }
+
+                        if(hashDestination.data("destination") == 'plugin-display-elements'){
+                            setTimeout(function() {
+                                $('.plugin-filter-elements').mixitup('remix','all');
+                            }, 1000);
+                        }
                         
                         /*  
                         *   Portfolio details
