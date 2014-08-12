@@ -506,7 +506,7 @@
             <footer>
                 <!-- More blog posts -->
                 <div class="show-more-cube">
-                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><span>Todos os<br/>Posts</span></a>
+                    <a href="<?php echo esc_url( home_url( '/arquivos' ) ); ?>"><span>Todos os<br/>Posts</span></a>
                 </div>
             </footer>
             <!-- End Footer -->

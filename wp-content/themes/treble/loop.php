@@ -20,14 +20,7 @@
 
 ?>
 
-<?php
-/**
- * The template for displaying Search Results pages
- *
- * @package Treble
- * @subpackage Twenty_Fourteen
- * @since Twenty Fourteen 1.0
- */ ?>
+
 
 <!-- PAGE | BLOG -->
 <div class="pages" id="page-blog-list">
@@ -69,7 +62,8 @@
               
               <?php the_content();?>
 
-              <a class="btn btn-warning" href="<?php the_permalink(); ?>#write-replay" title="<?php the_title_attribute(); ?>">Clique aqui para comentar</a>
+              <a class="btn btn-warning"
+              href="<?php the_permalink(); ?>#write-replay" title="<?php the_title_attribute(); ?>">Clique aqui para comentar</a>
         	</article>
         	<hr>
         	<?php endwhile;?>

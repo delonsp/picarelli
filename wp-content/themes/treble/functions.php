@@ -134,7 +134,7 @@ function wpbeginner_numeric_posts_nav() {
 		$links[] = $paged + 1;
 	}
 
-	echo '<div class="pagination"><ul>' . "\n";
+	echo '<div class="navigation"><ul>' . "\n";
 
 	/**	Previous Post Link */
 	if ( get_previous_posts_link() )
