@@ -28,6 +28,12 @@
                         <div id="welcome-messages">
                             <ul class="slides">
                                 <li>
+                                    <h2 class="dark-grey">Várias especialidades</h2>
+                                </li>
+                                <li>
+                                    <h2 class="dark-grey">Variedade de exames</h2>
+                                </li>
+                                <li>
                                     <h2 class="dark-grey">Prevenção, Diagnóstico e Tratamento</h2>
                                 </li>
                                 <li>
@@ -36,6 +42,7 @@
                                 <li>
                                     <h2 class="dark-grey">Foco no Paciente</h2>
                                 </li>
+                                
                             </ul>
                         </div>
                         
@@ -160,9 +167,8 @@
                 <!-- Short desciption about Work in general -->
                 <div class="row">
                     <div class="span8 offset2">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
-                        </p>
+                        <p>Estamos sempre preocupados em oferecer os melhores métodos diagnósticos disponíveis.
+                            Clique em cada uma das categorias e imagens abaixo para maiores detalhes.</p>
                     </div>
                 </div>
                     
@@ -344,7 +350,7 @@
                         <a href="#http://localhost/picarelli/wp-content/themes/treble/pages/exams/usg_transcraniano.html" data-destination="portfolio-items" data-insert="before">
                             <img src="<?php bloginfo('template_url'); ?>/assets/images/pages/exams/usg_transcraniano.jpg" alt="usg transcraniano">
                             <div class="portfolio-overlay">
-                                <h4>Ultra-Som transcraniano</h4>
+                                <h4>Ultra-Som doppler transcraniano</h4>
                             </div>
                         </a>
                     </li>
@@ -456,9 +462,7 @@
                 <h1>Conheça nossa Equipe</h1>
                 <div class="row">
                     <div class="span8 offset2">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        </p>
+                        <p>Além da Cardiologia temos uma grande variedade de especialistas. Confira abaixo.</p>
                     </div>
                 </div>
                 <nav class="submenu">
