@@ -72,6 +72,12 @@ $(function() {
                                 $(this).remove();
                             });
                         }
+
+                        if($(".destaques-item-details").length != 0 && hashDestination.data("destination") == 'destaques-items') {
+                            $(".destaques-item-details").slideUp(500, function(){
+                                $(this).remove();
+                            });
+                        }
                 
                     /*  
                     *   Insert data
@@ -106,9 +112,9 @@ $(function() {
                             }, 1000);
                         }
 
-                        if(hashDestination.data("destination") == 'plugin-display-elements'){
+                        if(hashDestination.data("destination") == 'about-items'){
                             setTimeout(function() {
-                                $('.plugin-filter-elements').mixitup('remix','all');
+                                $('.about-items').mixitup('remix','all');
                             }, 1000);
                         }
                         
@@ -123,6 +129,18 @@ $(function() {
                                 scrollTop: $(".portfolio-item-details").offset().top - 70
                             }, 1000);
                         }
+
+                        /*  
+                        *   Destaques details
+                        *   Slide down content and scroll to.
+                        */
+                        if(hashDestination.data("destination") == 'destaques-items'){
+                            $(".destaques-item-details").slideDown();
+
+                            $('html, body').animate({
+                                scrollTop: $(".destaques-item-details").offset().top - 70
+                            }, 1000);
+                        }
                     
                         /*  
                         *   Blog details
@@ -135,6 +153,8 @@ $(function() {
                                 scrollTop: $(".blog-details").offset().top - 70
                             }, 1000);
                         }
+
+                        
                     /*
                     *   Action on href element
                     */

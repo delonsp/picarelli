@@ -375,4 +375,153 @@ get_header(); ?>
 				</div><!-- #nav-below -->
 <?php endif; ?>
 
+<!-- mixitup update to 2.1-->
 
+<script type="text/javascript">
+	$('.plugin-filter-elements').mixItUp({
+		animation: {
+			effects: 'fade rotateY',
+			duration: 600,
+			easing: 'smooth',
+			animateResizeContainer: true,
+			perspectiveDistance: '3000px',
+        	perspectiveOrigin: '50% 50%',
+        	//transitionSpeed: 600,
+        	// effects: ['fade','rotateY'],
+        	 // perspectiveDistance: '3000',
+        	// perspectiveOrigin: '50% 50%',
+        	// easing: 'smooth',
+        	// resizeContainer: true,
+		},
+		selectors: {
+			target: '.mix',
+			filter: '.plugin-filter',
+			sort: '.sort',
+			// targetSelector: '.mix',
+	        // filterSelector: '.plugin-filter',
+	        //sortSelector: '.sort',
+		},
+		layout: {
+			display: 'inline-block',
+			containerClassFail: 'fail'
+			 //failClass: 'fail',
+			//targetDisplayGrid: 'inline-block',
+		},
+		load: {
+			sort: false,
+			filter: 'all'
+			//showOnLoad: 'all',
+        	//sortOnLoad: false,
+		},
+		callbacks: {
+			onMixLoad: null,
+	        onMixStart: null,
+	        onMixEnd: null
+	        // onMixLoad: null,
+	        // onMixStart: null,
+	        // onMixEnd: null
+		},
+		controls: {
+			toggleFilterButtons: false,
+			toggleLogic: 'or'
+			// multiFilter: false,
+   			// filterLogic: 'or',
+		},
+
+        
+        // buttonEvent: 'click',
+        // listEffects: null,
+        // layoutMode: 'grid',
+        // targetDisplayList: 'block',
+        // gridClass: '',
+        // listClass: '',
+        // minHeight: 0,
+        // animateGridList: true,
+        
+    });
+</script>
+
+
+
+
+<!-- PAGE | BLOG -->
+    <div class="pages" id="page-blog">
+        <div class="container">
+            <!-- Header -->
+            <header>
+                <h4 class="line-divider">Blog</h4>
+                <h1>Recent Blog Posts</h1>
+                
+                
+                
+            </header>
+            <!-- End Header -->
+            
+            <!-- Article -->
+            <article>
+                <!-- Blog articles -->
+                <ul class="thumbnails">
+                    <!-- Blog post -->
+                    <li class="span4">
+                    
+                        <!-- Blog image -->
+                        <a href="./pages/blog/blog_1.html">
+                            <img src="http://placehold.it/390x300" alt="Treble">
+                        </a>
+                        
+                        <!-- Blog title -->
+                        <h5>
+                            Convenios<br/>
+                            <small>April 10, 2013</small>
+                        </h5>
+                        
+                        <!-- Blog post description -->
+                        <p class="smallFontBy08">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua,consectetur adipisicing elit.</p>
+                        
+                        <!-- Blog read more -->
+                        <div class="read-more">
+                            <a href="./pages/blog/blog_1.html">Read More...</a>
+                        </div>
+                    </li>
+                    <li class="span4">
+                        <a href="./pages/blog/blog_2.html">
+                            <img src="http://placehold.it/390x300" alt="Treble">
+                        </a>
+                        <h5>
+                            Parceria Pró-Imune<br/>
+                            <small>April 10, 2013</small>
+                        </h5>
+                        <p class="smallFontBy08">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua,consectetur adipisicing elit.</p>
+                        <div class="read-more">
+                            <a href="./pages/blog/blog_2.html">Read More...</a>
+                        </div>
+                    </li>
+                    <li class="span4">
+                        <a href="./pages/blog/blog_3.html">
+                            <img src="http://placehold.it/390x300" alt="Treble">
+                        </a>
+                        <h5>
+                            Day Clinic - Checkup Geral<br/>
+                            <small>April 10, 2013</small>
+                        </h5>
+                        <p class="smallFontBy08">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua,consectetur adipisicing elit.</p>
+                        <div class="read-more">
+                            <a href="./pages/blog/blog_3.html">Read More...</a>
+                        </div>
+                    </li>
+                    
+                </ul>
+            </article>
+            <!-- End Article -->
+    
+            <!-- Footer -->
+            <footer>
+                <!-- More blog posts -->
+                <div class="show-more-cube">
+                    <a href="./pages/blog/blog.html"><span>All Blog<br/>Posts</span></a>
+                </div>
+            </footer>
+            <!-- End Footer -->
+        </div>
+    </div>
+<!-- END PAGE | BLOG -->

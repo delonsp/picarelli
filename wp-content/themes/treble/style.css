@@ -178,9 +178,217 @@ li.archive-year a{
   css for custom mixitup
 */
 
-/*#insert-text .mix {
+.about-items .mix2 {
   display: none;
-}*/
+}
+
+#brighten {
+  color: #fff;
+}
+
+.convenios h5 {
+
+  font-size: 22px;
+  color: rgb(141, 138, 138);
+  text-transform: uppercase;
+  font-weight: 800;
+  margin: 19.28571428571429px 0;
+  letter-spacing: 2px;
+
+}
+#destaque {
+  color: rgb(74, 74, 75);
+}
+
+
+/*
+*   PAGE | Picarelli
+*/
+#page-picarelli {
+  position: relative;
+  background: url("assets/images/pages/picarelli/pc_bck.jpg") 50% 0 no-repeat fixed;
+  padding-top: 90px;
+  padding-bottom: 130px;
+}
+#page-picarelli .container {
+  z-index: 2;
+  position: relative;
+  height: 200px;
+}
+#page-picarelli .twitter-devider {
+  background: url("assets/images/css/divider_tw.png") no-repeat center bottom;
+  padding-bottom: 60px;
+}
+#page-picarelli .twitterfeed {
+  min-height: 55px;
+  padding-top: 20px;
+  position: relative;
+}
+#page-picarelli .twitterfeed .tweet_time {
+  display: none;
+}
+#page-picarelli .twitterfeed .tweet_time a {
+  font-size: 11px;
+  color: #ffffff;
+  display: block;
+}
+#page-picarelli .twitterfeed .tweet_text a:hover {
+  color: #4e808e;
+  text-decoration: underline;
+}
+#page-picarelli .twitterfeed .tweet_list {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+#page-picarelli .twitterfeed .tweet_list li {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+#page-picarelli .twitterfeed .carousel-indicators {
+  bottom: -70px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  top: auto;
+}
+#page-picarelli .twitterfeed .carousel-indicators li {
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: inline-block;
+  float: none;
+  height: 8px;
+  width: 8px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
 
 
 
+/*
+*   PAGE | DESTAQUES
+*/
+#page-destaques h5 {
+  margin-bottom: 12px;
+}
+#page-destaques .read-more {
+  text-align: right;
+  margin-bottom: 20px;
+}
+#page-destaques .read-more a {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 11px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 20px;
+  letter-spacing: 1px;
+  color: #ffffff;
+  padding: 3px 8px;
+  margin: 0 3px;
+  position: relative;
+  background-color: #bbbbbb;
+}
+#page-destaques .read-more a:hover,
+#page-destaques .read-more a.active {
+  background-color: #4e808e;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+/*
+* destaques-item-details styling
+*/
+
+.destaques-item-details {
+  background-color: #F1F1F1;
+  padding: 15px;
+  margin-bottom: 50px;
+  display: none;
+}
+.destaques-item-details .close-portfolio {
+  text-align: right;
+}
+.destaques-item-details .close-portfolio span {
+  border: 2px solid #292929;
+  color: #292929;
+  display: block;
+  font-family: "Tahoma", Helvetica, sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  height: 25px;
+  line-height: 1.1em;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  text-indent: 1px;
+  text-transform: uppercase;
+  width: 25px;
+  float: right;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  text-indent: -99999px;
+  background: url("assets/images/css/cls.png") no-repeat center center;
+}
+.destaques-item-details .close-portfolio span:hover {
+  opacity: 0.5;
+}
+.destaques-item-details h5 {
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+.destaques-item-details article {
+  margin-top: 15px;
+}
+.destaques-item-details .website h5 {
+  line-height: 20px;
+  margin-top: 15px;
+}
+.destaques-item-details .website a {
+  font-size: 13px;
+  line-height: 15px;
+  font-weight: bold;
+}
+.destaques-item-details .social-icons {
+  margin: 40px 0;
+}
+.destaques-item-details .submenu {
+  text-align: left;
+}
+.destaques-item-details .submenu span {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 11px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 28px;
+  letter-spacing: 1px;
+  color: #ffffff;
+  padding: 3px 8px;
+  margin: 0;
+  position: relative;
+  background-color: #bbbbbb;
+}
+.destaques-item-details .submenu span:hover {
+  text-decoration: none;
+}
+
+
+/*error page 404*/
+
+.error404 {
+  margin-top: 60px;
+  padding-left: 20px;
+}
+
+.no-results {
+  margin-top: 30px;
+  padding-left: 20px;
+}
+#container #content {
+  margin-top: 40px;
+}

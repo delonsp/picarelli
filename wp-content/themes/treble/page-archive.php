@@ -4,7 +4,7 @@
  */
  ?>
 
-<?php get_header();?>
+<?php get_header('fixednav');?>
 
 <!-- PAGE | BLOG -->
 <div class="pages" id="page-blog-list">

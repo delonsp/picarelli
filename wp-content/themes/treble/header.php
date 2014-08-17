@@ -31,7 +31,7 @@
             <div class="row-fluid">
                 <div class="span12 center">
                     <!-- LOGO -->
-                    <a class="brand pull-left" href="./">
+                    <a class="brand pull-left" href="<?php echo esc_url( home_url( '/' ) ); ?>">
                         <img src="<?php bloginfo('template_url'); ?>/assets/images/logo.png" alt="Treble">
                     </a>
                     <!-- END LOGO -->
@@ -46,11 +46,12 @@
                     
                     <!-- MAIN MENU -->
                     <ul id="main-menu" class="nav-collapse collapse">
-                        <li><a href="#page-welcome">Principal</a></li>
-                        <li><a href="#page-work">Exames</a></li>
-                        <li><a href="#page-features">Depoimentos</a></li>
-                        <li><a href="#page-about">Equipe</a></li>
-                        <li><a href="#page-blog">Artigos & Notícias</a></li>
+                        <li><a href="<?php echo esc_url( home_url( '/#page-welcome' ) ); ?>">Principal</a></li>
+                        <li><a href="<?php echo esc_url( home_url( '/#page-destaques' ) ); ?>">Destaques</a></li>
+                        <li><a href="<?php echo esc_url( home_url( '/#page-work' ) ); ?>">Exames</a></li>
+                        <li><a href="<?php echo esc_url( home_url( '/#page-features' ) ); ?>">Depoimentos</a></li>
+                        <li><a href="<?php echo esc_url( home_url( '/#page-about' ) ); ?>">Equipe</a></li>
+                        <li><a href="<?php echo esc_url( home_url( '/#page-blog' ) ); ?>">Artigos & Notícias</a></li>
                         <li><a href="#page-contact">Contato</a></li>
                     </ul>
                     <!-- END MAIN MENU -->

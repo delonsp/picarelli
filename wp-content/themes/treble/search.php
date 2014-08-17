@@ -7,7 +7,7 @@
  * @since Twenty Ten 1.0
  */
 
-get_header(); ?>
+get_header('fixednav'); ?>
 
 
 

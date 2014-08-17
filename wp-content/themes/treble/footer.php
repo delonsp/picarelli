@@ -22,10 +22,12 @@
                     <!-- Contact form -->
                     <div class="span6">
                         <h5>Mande uma mensagem</h5>
-                        <form>
-                            <input type="text" class="span12" placeholder="Title" required="required">
-                            <input type="email" class="span12" placeholder="Email" required="required">
-                            <textarea rows="10" class="span12" required="required"></textarea>
+                        <div id="envioSucesso"></div>
+                        <form method="post" id="envioForm">
+                            <input type="text" id="nomeRemetente" class="span12" placeholder="Nome" required="required">
+                            <input type="text" id="telefone" class="span12" placeholder="telefone" >
+                            <input type="email" id="email" class="span12" placeholder="Email" required="required">
+                            <textarea rows="10" id="mensagem" class="span12" required="required"></textarea>
                             <button type="submit" class="btn btn-primary">Envie</button>
                         </form>
                     </div>
